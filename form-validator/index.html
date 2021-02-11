@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Form Validator</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link
       rel="stylesheet"
@@ -12,7 +12,50 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Script -->
+    <div class="container">
+      <h1>Form Validator</h1>
+      <from id="form">
+        <div id="formGroup">
+          <label for="name">Full name : </label>
+          <input type="text" id="name" placeholder="Key in username" />
+        </div>
+
+        <div id="formGroup">
+          <label for="phone">phone number : </label>
+          <input type="tel" id="phone" placeholder="Key in user phone" />
+        </div>
+
+        <div id="formGroup">
+          <label for="email">Email Address : </label>
+          <input type="text" id="email" placeholder="Key in mail" />
+        </div>
+
+        <div id="formGroup">
+          <label for="website">Website URL : </label>
+          <input type="url" id="website" placeholder="Key in website" />
+        </div>
+
+        <div id="formGroup">
+          <label for="password">Password : </label>
+          <input type="password" id="password" placeholder="Key in Password" />
+        </div>
+
+        <div id="formGroup">
+          <label for="password2">ConfirmPassword : </label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="ConfirmPassword Password"
+          />
+        </div>
+        <button type="submit">Register</button>
+      </from>
+    </div>
+
+    <div id="message-container">
+      <h3 class="message">Don't Hesitate!</h3>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
